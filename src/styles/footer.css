@@ -1,0 +1,87 @@
+/* ===== FOOTER CONTAINER ===== */
+.footer {
+  margin-top: 80px;
+  padding: 60px 40px;
+  border-top: 1px solid #1e293b;
+
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 40px;
+
+  color: white;
+}
+
+/* ===== LOGO ===== */
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.logo-icon {
+  background: linear-gradient(135deg, #7c3aed, #6366f1);
+  padding: 8px 10px;
+  border-radius: 10px;
+  font-size: 14px;
+}
+
+/* ===== LEFT SECTION ===== */
+.footer-left p {
+  margin-top: 15px;
+  color: #94a3b8;
+  max-width: 350px;
+  line-height: 1.6;
+}
+
+/* ===== CENTER SECTION ===== */
+.footer-center {
+  align-self: center;
+}
+
+.footer-center h3 {
+  margin-bottom: 15px;
+  font-size: 16px;
+}
+
+/* ===== LINKS FIX (IMPORTANT) ===== */
+.footer-center ul {
+  list-style: none;
+  padding: 0;
+}
+
+/* remove styling from li */
+.footer-center li {
+  margin-bottom: 10px;
+}
+
+/* apply styling to actual links */
+.footer-center a {
+  text-decoration: none;
+  color: #94a3b8;
+  transition: 0.2s;
+  display: inline-block;
+}
+
+/* hover effect */
+.footer-center a:hover {
+  color: #8b5cf6;
+  transform: translateX(4px);
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 768px) {
+  .footer {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .footer-left p {
+    margin: auto;
+  }
+
+  .footer-center {
+    margin-top: 20px;
+  }
+}

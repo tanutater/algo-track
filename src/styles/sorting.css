@@ -1,0 +1,69 @@
+.sorting {
+  padding: 40px;
+}
+
+.heading {
+  font-size: 42px;
+  margin-bottom: 10px;
+}
+
+.subtext {
+  opacity: 0.7;
+  margin-bottom: 30px;
+}
+
+/* SAME GRID AS DASHBOARD */
+.cards {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 25px;
+}
+
+/* CARD STYLE */
+.card {
+  background: #0b1220;
+  border-radius: 16px;
+  padding: 25px;
+  border: 1px solid #1f2937;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  border-color: #6366f1;
+  box-shadow: 0 10px 30px rgba(99, 102, 241, 0.2);
+}
+
+.tag {
+  float: right;
+  font-size: 12px;
+  background: #1f2937;
+  padding: 5px 10px;
+  border-radius: 12px;
+}
+
+.card h2 {
+  margin-top: 20px;
+}
+
+.card p {
+  opacity: 0.7;
+}
+
+.link {
+  display: inline-block;
+  margin-top: 10px;
+  color: #a78bfa;
+}
+@media (max-width: 1000px) {
+  .cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .cards {
+    grid-template-columns: 1fr;
+  }
+}
